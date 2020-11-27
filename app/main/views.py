@@ -10,11 +10,6 @@ from ..models import Review
 @main.route('/')
 def index():
 
-    '''
-    View root page function that returns the index page and its data
-    '''
-
-   # Getting popular movie
     popular_movies = get_movies('popular')
     upcoming_movie = get_movies('upcoming')
     now_showing_movie = get_movies('now_playing')
